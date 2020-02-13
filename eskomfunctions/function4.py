@@ -1,5 +1,21 @@
+import numpy as np
+import pandas as pd
+
+mun_dict = {
+    '@CityofCTAlerts' : 'Cape Town',
+    '@CityPowerJhb' : 'Johannesburg',
+    '@eThekwiniM' : 'eThekwini' ,
+    '@EMMInfo' : 'Ekurhuleni',
+    '@centlecutility' : 'Mangaung',
+    '@NMBmunicipality' : 'Nelson Mandela Bay',
+    '@CityTshwane' : 'Tshwane'
+}
+
 def extract_municipality_hashtags(df):
-    """Return a modified pandas dataframe that contains of two new columns about the municipality and the hashtag of the tweets
+    """
+
+    Return a modified pandas dataframe that contains of two new columns about the municipality and the hashtag of the tweets
+
     Args:
         df(DataFrame): df pandas dataframe
 
@@ -10,18 +26,7 @@ def extract_municipality_hashtags(df):
         >>>> extract_municipality_hashtags(twitter_df.copy())
 
     """
-    import numpy as np
-    import pandas as pd
 
-    mun_dict = {
-    '@CityofCTAlerts' : 'Cape Town',
-    '@CityPowerJhb' : 'Johannesburg',
-    '@eThekwiniM' : 'eThekwini' ,
-    '@EMMInfo' : 'Ekurhuleni',
-    '@centlecutility' : 'Mangaung',
-    '@NMBmunicipality' : 'Nelson Mandela Bay',
-    '@CityTshwane' : 'Tshwane'
-    }
 
     #create a empty list
     mun_list = []
