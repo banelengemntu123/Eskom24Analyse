@@ -1,3 +1,5 @@
+import numpy as np
+
 def dictionary_of_metrics(list):
 
 
@@ -48,7 +50,7 @@ def dictionary_of_metrics(list):
 
 def five_num_summary(items):
 
-    import numpy as np
+
 
     #Function 2
 
