@@ -7,14 +7,15 @@
 
         Args:
             dates(list): list of datetime strings
-        
+
         returns:
             list: lists of only the date
-        
+
         Example:
           >>>>date_parser(dates[:3])
           ['2019-11-29', '2019-11-29', '2019-11-29']
     """"      
+
 
         mylist= []
         for date in dates:
