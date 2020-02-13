@@ -1,1 +1,0 @@
-# Eskom24Analyse
