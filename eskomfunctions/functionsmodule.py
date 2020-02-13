@@ -1,5 +1,7 @@
 def dictionary_of_metrics(list):
 
+
+
     # Function 1
     """
     Calculate the five number metrics for a list of numerical data
@@ -45,6 +47,8 @@ def dictionary_of_metrics(list):
 # ________________________________________________________________________________________________________________________________________________________
 
 def five_num_summary(items):
+
+    import numpy as np
 
     #Function 2
 
