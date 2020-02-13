@@ -8,6 +8,6 @@ setup (
     description = 'Package to sort data received from Eskom',
     long_description = open('README.md').read(),
     install_requires = ['numpy'],
-    url = 'https://github.com/banelengemntu123/eskomproject123.git',
+    url = 'https://github.com/banelengemntu123/Eskom24Analyse.git',
     author = 'team24'
 )
