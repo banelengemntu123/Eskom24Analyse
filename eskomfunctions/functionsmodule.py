@@ -1,4 +1,4 @@
-
+import numpy as np
 
 def dictionary_of_metrics(list):
 
@@ -49,7 +49,6 @@ def dictionary_of_metrics(list):
 # ________________________________________________________________________________________________________________________________________________________
 
 def five_num_summary(items):
-    import numpy as np
 
 
 
@@ -84,7 +83,3 @@ def five_num_summary(items):
     summary['median'] = np.quantile(items, .5)
 
     return summary
-
-
-
-    #_________________________________________________________________________________________________

@@ -6,12 +6,12 @@
 
         Args:
             dates(list): list of datetime strings
-        
+
         returns:
             list: lists of only the date
-        
+
         Example:
-        
+
 
         mylist= []
         for date in dates:
