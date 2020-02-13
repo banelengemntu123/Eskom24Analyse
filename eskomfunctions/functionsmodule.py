@@ -83,3 +83,24 @@ def five_num_summary(items):
     summary['median'] = np.quantile(items, .5)
 
     return summary
+
+def number_of_tweets_per_day (df):
+    
+
+
+    #Function 2
+
+    """
+     calculates the number of tweets that were posted per day
+
+    Args:
+        df (dataframe) : dataframe of 
+
+    Returns:
+        dictionary : keys for five number summary linked to appropriate values
+
+    Examples:
+        >>>> five_num_summary([12,125,3,89,36])
+        {'min': 3, 'q1': 12.0, 'median': 36.0, 'q3': 89.0, 'max': 125}
+
+    """
