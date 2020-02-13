@@ -1,4 +1,4 @@
-def dictionary_of_metrics (list):
+def dictionary_of_metrics(list):
 
     # Function 1
     """
