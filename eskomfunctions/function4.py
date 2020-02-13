@@ -48,7 +48,7 @@ def extract_municipality_hashtags(df):
                 flag=True
 
     hashtags=[] #new list for hashtags
-    for tweet in twitter_df['Tweets']:
+    for tweet in df['Tweets']:
         hashtags.append([tags for tags in tweet.lower().split() if tags[0][0] == '#']) #loop through tags in the column after splitting and lowing each tweet
         hashtags = [np.nan if x == [] else x for x in hashtags]  #every '#' will append to the new list as a lower case list
     df['municipality'] = mun_list
