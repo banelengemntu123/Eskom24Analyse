@@ -83,3 +83,5 @@ def five_num_summary(items):
     summary['median'] = np.quantile(items, .5)
 
     return summary
+
+    print (3+6)
