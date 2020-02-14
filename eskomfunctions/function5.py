@@ -31,4 +31,4 @@ def number_of_tweets_per_day(df):
     
     return new_df
 
-### END FUNCTIONg
+### END FUNCTION
