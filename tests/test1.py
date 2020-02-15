@@ -1,4 +1,4 @@
-from eskomfunctions import eskomfunctions:
+from eskomfunctions import function1:
 
 def test_dictionary_of_metrics:
 

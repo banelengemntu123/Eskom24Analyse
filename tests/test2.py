@@ -1,3 +1,5 @@
+from eskomfunctions import function2
+
 def test_five_num_summary:
 
 
