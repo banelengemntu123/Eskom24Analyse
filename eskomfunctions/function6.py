@@ -1,7 +1,16 @@
 def word_splitter(df):
 
     """
-    Add appropriate docstring
+    Splits the sentences in a dataframe's column into a list of the separate words. 
+    The created lists will be placed in a column named 'Split Tweets' in the original dataframe.
+    All wordsin lower case.
+
+    Args:
+        df (DataFrame) : a pandas dataframe which should contain a column, named 'Tweets'.
+
+    Returns:
+        df (Dataframe) : a modified pandas dataframe from the original with an extra column "Tweets"
+        added.
     """
 
     tweet_split = []
