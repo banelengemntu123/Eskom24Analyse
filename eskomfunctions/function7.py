@@ -47,15 +47,22 @@ def stop_words_remover(df):
         df (DataFrame) : a pandas dataframe with a new column, headed 'Without Stop Words'
         containing strings from the 'Tweets' column split and withput stopwprds.
     """
-
+    
+    # initialising empty list 'a'
     a = []
+
+    # splitting each row of strings in column "Tweets" into individual. lowercase elements
     for i in df['Tweets']:
         new = [x.lower() for x in i.split()]
+    # removing stopwords from list of individual lowercase words
         for j in new.copy():
             if j in stop_words_dict['stopwords']:
                 new.remove(j)
-
+    # adding list of lowercase elements, excluding stopwords, to list 'a'
         a.append(new)
+
+    # adding column 'Without Stop Words' to existing DataFrame with data from array 'a'
     df['Without Stop Words'] = a
 
+    # returning new DataFrame
     return df
