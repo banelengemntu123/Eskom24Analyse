@@ -23,5 +23,5 @@ def word_splitter(df):
     #create a new 'Split Tweets' column to original dataframe
     df['Split Tweets'] = tweet_split
 
-    #return updated Dataframe
+    #return updated dataframe
     return df
