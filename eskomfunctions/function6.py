@@ -12,11 +12,16 @@ def word_splitter(df):
         df (Dataframe) : a modified pandas dataframe from the original with an extra column "Tweets"
         added.
     """
-
+    #create an empty list
     tweet_split = []
+    
+    #iterate through all the Tweets in the Dataframe['Tweets'] column
     for tweet in df['Tweets']:
+        #append lowecase word split list to tweet_split
         tweet_split.append(tweet.lower().split())#added method to convert string to lowercase
-
+    
+    #create a new 'Split Tweets' column to original dataframe
     df['Split Tweets'] = tweet_split
 
+    #return updated Dataframe
     return df
