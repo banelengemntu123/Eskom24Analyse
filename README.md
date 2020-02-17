@@ -25,7 +25,7 @@ function1.dictionary_of_metrics([12,36,25,14,36,18,36])
 
 function2.five_num_summary([25,36,48,39,23,21,45])
   # returns {'min': 21, 'q1': 24.0, 'median': 36.0, 'q3': 42.0, 'max': 48}
-
+```
 
 ## license
 [MIT](https://choosealicense.com/licenses/mit/)
