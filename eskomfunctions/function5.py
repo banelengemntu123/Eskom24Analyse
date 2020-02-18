@@ -12,7 +12,7 @@ def number_of_tweets_per_day(df):
 
     Returns:
         df (Dataframe) : a new pandas dataframe with an index columns
-        for the 'Date' and a column 'Tweets' for the number of tweets sent that day. 
+        for the 'Date' and a column 'Tweets' for the number of tweets sent that day.
     """
 
     a = []
