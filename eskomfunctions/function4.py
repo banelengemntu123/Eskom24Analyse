@@ -14,9 +14,9 @@ mun_dict = {
 def extract_municipality_hashtags(df):
 
     """
-    Return a modified pandas dataframe that contains of two new columns about the municipality and the hashtag of the tweets
+    Return a dataframe with added columns of extracted hashtags and the municipality in each tweet
 
-    The Input is a pandas DataFrame (df) and the output is a pandas DataFrame (df) with two new columns df["municipality"] and df["hashtags"]
+    The Input is a pandas DataFrame (df) and the output is a pandas DataFrame (df) with two new columns "municipality" and "hashtags"
 
     Args:
         df(DataFrame): df pandas dataframe
@@ -27,7 +27,6 @@ def extract_municipality_hashtags(df):
     Examples:
         >>>>extract_municipality_hashtags(twitter_df.copy()).loc[8, "Municipality"]
         ['Johannesburg']
-
     """
 
 
