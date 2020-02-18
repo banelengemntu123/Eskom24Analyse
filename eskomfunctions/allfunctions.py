@@ -159,7 +159,29 @@ def extract_municipality_hashtags(df):
     df['hashtags'] = hashtags
     return df
 
-////
+def number_of_tweets_per_day(df):
+
+    df["Date"] = [i.split(' ',1)[0] for i in df["Date"]]
+    a = sorted(list(df["Date"].unique()))
+
+    #Initialising an empty dictionary 'dictp'
+    dictp = {}
+
+    #iterate through the sorted list
+    for i in a:
+    #Iterate through each splited value in the dataframe
+        for x in df[df["Date"] == i]["Date"]:
+            if x in dictp.keys():
+                dictp[x] += 1
+            else:
+                dictp[x] = 1
+
+    #creating a new dataframe "new_df" with coloumn tweets
+    new_df = pd.Dataframe.from_dict(data=dictp,orient="index", columns= ["Tweets"])
+    new_df.index.name = "Date"
+
+    #returning a new dataframe with the coloumn 'Tweets' and 'Date'
+    return new_df
 
 def word_splitter(df):
 
