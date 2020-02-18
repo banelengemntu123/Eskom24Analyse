@@ -5,6 +5,8 @@ def five_num_summary(items):
     """
     Calculate the five number summary (minimum, maximun amd the 1st, 2nd and 3rd quartiles) for numerical data
 
+    The input is a list of integers and the output is a dictionary.
+
     Args:
         items (list) : list (or array) of numerical data
 
