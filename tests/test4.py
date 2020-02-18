@@ -1,9 +1,9 @@
 from eskomfunctions import function4
 
 def test_municipality_hashtags(df):
+
     """
     Test for extracted hashtags and municipalities are in new columns
-
     """
 
     assert function4.extract_municipality_hashtags(twitter_df.copy()).loc[4, 'hashtags'] == ['#eskomfreestate', '#mediastatement'], 'incorrect'
