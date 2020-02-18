@@ -1,38 +1,45 @@
-import pandas as pd
-
 def number_of_tweets_per_day(df):
 
     """
-    Create a function that counts the number of tweets sent in a day
-    and converts data to a pandas dataframe.
+     Create a function that counts the number of tweets sent in a day
+     and converts data to a pandas dataframe.
+
+     Input is a DataFrame and the output is a dataframe with new column
 
     Args:
         df (DataFrame) : a pandas dataframe with a column 'Date' for when
         each tweet was sent.
 
+
     Returns:
-        df (Dataframe) : a new pandas dataframe with an index columns
-        for the 'Date' and a column 'Tweets' for the number of tweets sent that day.
+        df (Dataframe) : a new pandas dataframe with an index columns,
+        grouped by day, with the number of tweets for that day.
+
+    Examples:
+        number_of_tweets_per_day(twitter_df.copy()).loc['2019-11-20', 'Tweets'] == 18
+        number_of_tweets_per_day(twitter_df.copy()).loc['2019-11-22', 'Tweets'] == 25
+
     """
 
-    # initialising varianle to store new list
-    a = []
+    #Iterate through the dataframe and split
+    df["Date"] = [i.split(' ',1)[0] for i in df["Date"]]
+    a = sorted(list(df["Date"].unique()))
 
-    # adding date portion of datetime string to list 'a'
-    for i in df['Date']:
-        a.append(i[:10])
+    #Initialising an empty dictionary 'dictp'
+    dictp = {}
 
-    # creating dictionary with values counting how many times the specfic date appears in list a
-    dict_a = {i:a.count(i) for i in a}
+    #iterate through the sorted list
+    for i in a:
+    #Iterate through each splited value in the dataframe
+        for x in df[df["Date"] == i]["Date"]:
+            if x in dictp.keys():
+                dictp[x] += 1
+            else:
+                dictp[x] = 1
 
-    # creating a DataFrame using data from dictionary
-    df_a = pd.DataFrame(data=dict_a.values(), index=dict_a, columns = ['Tweets'])
+    #creating a new dataframe "new_df" with coloumn tweets
+    new_df = pd.Dataframe.from_dict(data=dictp,orient="index", columns= ["Tweets"])
+    new_df.index.name = "Date"
 
-    # naming index column
-    df_a.index.names = ['Date']
-
-    # sorting DataFrame by datetime in descending order
-    df_a.index = pd.to_datetime(df_a.index)
-
-    # returning sorted DataFrame in ascending order
-    return df_a.iloc[::-1]
+    #returning a new dataframe with the coloumn 'Tweets' and 'Date'
+    return new_df
