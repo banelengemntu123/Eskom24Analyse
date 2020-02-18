@@ -3,7 +3,7 @@ from eskomfunctions import function3
 def test_date_parser(dates):
 
     """
-    expected outcomes:
+    Test function to ensure it operates correctly.
     """
 
     date_parser(dates[:3]) == ['2019-11-29', '2019-11-29', '2019-11-29']
