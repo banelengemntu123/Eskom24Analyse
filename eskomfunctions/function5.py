@@ -3,7 +3,7 @@ def number_of_tweets_per_day(df):
     """
      Create a function that counts the number of tweets sent in a day
      and converts data to a pandas dataframe.
-     
+
      Input is a DataFrame and the output is a dataframe with new column
 
     Args:
@@ -20,9 +20,6 @@ def number_of_tweets_per_day(df):
         number_of_tweets_per_day(twitter_df.copy()).loc['2019-11-22', 'Tweets'] == 25
 
     """
-
-
-def number_of_tweets_per_day(df):
 
     #Iterate through the dataframe and split
     df["Date"] = [i.split(' ',1)[0] for i in df["Date"]]
