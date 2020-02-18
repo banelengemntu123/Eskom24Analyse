@@ -11,7 +11,7 @@ def date_parser(dates):
 
     Example:
       >>>>date_parser(dates[:3])
-          ['2019-11-29', '2019-11-29', '2019-11-29']
+      ['2019-11-29', '2019-11-29', '2019-11-29']
     """
 
     #Initializing an empty list to append a new list in
@@ -19,7 +19,7 @@ def date_parser(dates):
 
     #slicing only the dates from the old list and appending to a new list
     for date in dates:
-        mylist.append(date[:10]) 
-    
+        mylist.append(date[:10])
+
     #returning a new list with only a string of dates.
     return mylist
