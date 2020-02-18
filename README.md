@@ -56,5 +56,8 @@ function4.extract_municipality_hashtags(twitter_df.copy()).loc[8, "Municipality"
 Kgaogelo Mamadi
   mrmamadi@outlook.com
 
+Pinky Dimakatso Maredi
+  maredipinkydimakatso@gmail.com
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
