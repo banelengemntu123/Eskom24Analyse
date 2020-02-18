@@ -16,8 +16,8 @@ def number_of_tweets_per_day(df):
 
 
 def number_of_tweets_per_day(df):
-    # your code here
-    df["Date"] = [i.split(' ',1)[0] for i in df["Date"]]
+    
+    df["Date"] = [i.split(' ',1)[0] for i in df["Date"]] # 
     a = sorted(list(df["Date"].unique()))
     dictp = {}
     for i in a:
