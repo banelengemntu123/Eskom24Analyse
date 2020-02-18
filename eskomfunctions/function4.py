@@ -25,7 +25,7 @@ def extract_municipality_hashtags(df):
     Examples:
         >>>> extract_municipality_hashtags(twitter_df.copy()).loc[8, "Municipality"] == ['Johannesburg']
 
-    """
+    """ 
 
 
     #create a empty list
