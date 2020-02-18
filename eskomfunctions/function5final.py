@@ -9,8 +9,6 @@ def number_of_tweets_per_day(df):
 
     Returns:
         df (Dataframe) : dataframe, grouped by day, with the number of tweets for that day.
-    Examples:
-        >>> number_of_tweets_per_day(twitter_df.copy())
     """
 
 
