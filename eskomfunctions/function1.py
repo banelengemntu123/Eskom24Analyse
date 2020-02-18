@@ -3,6 +3,8 @@ def dictionary_of_metrics(list):
     """
     Calculate the metrics (minumum, maximum, mean, median, variance and standard deviation) for a list of numerical data
 
+    The input is a list of integers and it outputs a dictionary.
+
     Args:
         list (list) : list (or array) of numerical data
 
