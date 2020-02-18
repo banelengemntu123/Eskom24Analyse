@@ -32,6 +32,9 @@ function3.date_parser(dates[:3])
 function4.extract_municipality_hashtags(twitter_df.copy()).loc[8, "Municipality"]
 # returns ['Johannesburg']
 
+function5.number_of_tweets_per_day(twitter_df.copy()).loc['2019-11-20', 'Tweets']
+# returns 18
+
 ```
 
 ## License
