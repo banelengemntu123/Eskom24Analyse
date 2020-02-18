@@ -1,6 +1,6 @@
 # EskomDataAnalyser
 
-EskomDataAnalyser is a Python package with 7 built in functions to calculate the metric data of Eskom's numerical data and to display important data from Eskom related Tweets
+EskomDataAnalyser is a Python package with 7 built in functions to calculate the metric data of Eskom's numerical data and to display important data from Eskom related Tweets.
 
 ## Installation
 
@@ -8,6 +8,8 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install EskomDa
 
 ```bash
 pip install git+https://github.com/banelengemntu123/Eskom24Analyse.git
+
+pip install --upgrade git+https://github.com/banelengemntu123/Eskom24Analyse.git
 ```
 
 ## Usage
@@ -28,9 +30,6 @@ function2.five_num_summary([25,36,48,39,23,21,45])
 
 function3.date_parser(dates[:3])
 #returns ['2019-11-29', '2019-11-29', '2019-11-29']
-
-function4.extract_municipality_hashtags(twitter_df.copy()).loc[8, "Municipality"]
-# returns ['Johannesburg']
 
 ```
 
