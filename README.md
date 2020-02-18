@@ -53,6 +53,9 @@ function5.number_of_tweets_per_day(twitter_df.copy()).loc['2019-11-20', 'Tweets'
 
 function6.word_splitter(twitter_df.copy()).loc[0, 'Split Tweets']
 # returns ['@bongadlulane', 'please', 'send', 'an', 'email', 'to', 'mediadesk@eskom.co.za']
+
+function7.stop_words_remover(twitter_df.copy()).loc[0, "Without Stop Words"]
+# returns ['@bongadlulane', 'send', 'email', 'mediadesk@eskom.co.za']
 ```
 ## Authors and Acknowledgement
 
