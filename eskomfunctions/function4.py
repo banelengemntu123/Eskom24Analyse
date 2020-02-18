@@ -23,9 +23,10 @@ def extract_municipality_hashtags(df):
         df(DataFrame): DataFrame with new municipality and hashtag columns
 
     Examples:
-        >>>> extract_municipality_hashtags(twitter_df.copy()).loc[8, "Municipality"] == ['Johannesburg']
+        >>>>extract_municipality_hashtags(twitter_df.copy()).loc[8, "Municipality"]
+            ['Johannesburg']
 
-    """ 
+    """
 
 
     #create a empty list
@@ -36,16 +37,16 @@ def extract_municipality_hashtags(df):
         x = tweet.split()
 
     #Create a boolean variable for the while loop to hold true
-        flag =False 
+        flag =False
         while flag == 0:
 
     #Iterate through each splited value in the dataframe column
-            for key in x: 
+            for key in x:
                 if key[0] == '@':
                     if key in mun_dict.keys():
 
     #if the key which contains an '@ exists in a dictionary it will append to mun_list'
-                        mun_list.append([mun_dict[key]]) 
+                        mun_list.append([mun_dict[key]])
                         flag = True
 
     #should a key contain a : at the end, it should append as well
