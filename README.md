@@ -55,6 +55,8 @@ function4.extract_municipality_hashtags(twitter_df.copy()).loc[8, "Municipality"
 
 Kgaogelo Mamadi
   mrmamadi@outlook.com
+Michael Sathekge
+  michael@hopmedia.co.za
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
