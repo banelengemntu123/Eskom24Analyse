@@ -1,1 +1,8 @@
-from eskomfunctions import allfunctions, function1, function2, function3, function4, function5, function6, function7
+from eskomfunctions import allfunctions
+from eskomfunctions import function1
+from eskomfunctions import function2
+from eskomfunctions import function3
+from eskomfunctions import function4
+from eskomfunctions import function5
+from eskomfunctions import function6
+from eskomfunctions import function7
