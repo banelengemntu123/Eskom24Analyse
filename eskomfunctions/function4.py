@@ -25,7 +25,7 @@ def extract_municipality_hashtags(df):
         df(DataFrame): DataFrame with new municipality and hashtag columns
 
     Examples:
-        >>>>extract_municipality_hashtags(twitter_df.copy()).loc[8, "Municipality"]
+        >>> extract_municipality_hashtags(twitter_df.copy()).loc[8, "Municipality"]
         ['Johannesburg']
 
     """

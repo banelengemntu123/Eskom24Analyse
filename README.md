@@ -48,6 +48,8 @@ function3.date_parser(dates[:3])
 function6.word_splitter(twitter_df.copy()).loc[0, 'Split Tweets']
 # returns ['@bongadlulane', 'please', 'send', 'an', 'email', 'to', 'mediadesk@eskom.co.za']
 
+function4.extract_municipality_hashtags(twitter_df.copy()).loc[8, "Municipality"]
+# returns ['Johannesburg']
 ```
 
 ## License

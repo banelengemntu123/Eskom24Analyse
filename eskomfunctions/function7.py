@@ -50,7 +50,7 @@ def stop_words_remover(df):
         containing strings from the 'Tweets' column split and withput stopwprds.
 
     Examples:
-        >>>> stop_words_remover(twitter_df.copy()).loc[0, "Without Stop Words"]
+        >>> stop_words_remover(twitter_df.copy()).loc[0, "Without Stop Words"]
         ['@bongadlulane', 'send', 'email', 'mediadesk@eskom.co.za']
     """
 
