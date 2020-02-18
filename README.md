@@ -58,5 +58,8 @@ Kgaogelo Mamadi
 Michael Sathekge
   michael@hopmedia.co.za
 
+Victoria Chepape
+  chepape87@gmail.com
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
