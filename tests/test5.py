@@ -1,9 +1,10 @@
-from eskomfunctions import function5:
+from eskomfunctions import function5 :
 
 def test_number_of_tweets_per_day:
 
     """"
     Test function to ensure it operates correctly.
+
     """
 
     assert function5.number_of_tweets_per_day(twitter_df.copy()).loc['2019-11-20', 'Tweets'] == 18, 'incorrect'
