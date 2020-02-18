@@ -55,6 +55,12 @@ function4.extract_municipality_hashtags(twitter_df.copy()).loc[8, "Municipality"
 
 Kgaogelo Mamadi
   mrmamadi@outlook.com
+  
+Michael Sathekge
+  michael@hopmedia.co.za
+
+Victoria Chepape
+  chepape87@gmail.com
 
 Pinky Dimakatso Maredi
   maredipinkydimakatso@gmail.com
