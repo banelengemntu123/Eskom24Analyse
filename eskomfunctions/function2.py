@@ -3,7 +3,7 @@ import numpy as np
 def five_num_summary(items):
 
     """
-    Calculate the five number summary for numerical data
+    Calculate the five number summary (minimum, maximun amd the 1st, 2nd and 3rd quartiles) for numerical data
 
     Args:
         items (list) : list (or array) of numerical data

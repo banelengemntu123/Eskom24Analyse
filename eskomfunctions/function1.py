@@ -1,7 +1,7 @@
 def dictionary_of_metrics(list):
 
     """
-    Calculate the five number metrics for a list of numerical data
+    Calculate the metrics (minumum, maximum, mean, median, variance and standard deviation) for a list of numerical data
 
     Args:
         list (list) : list (or array) of numerical data
