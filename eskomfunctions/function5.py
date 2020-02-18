@@ -39,7 +39,7 @@ def number_of_tweets_per_day(df):
                 dictp[x] = 1
 
     #creating a new dataframe "new_df" with coloumn tweets
-    new_df = pd.DataFrame.from_dict(data=dictp,orient="index", columns= ["Tweets"])
+    new_df = pd.Dataframe.from_dict(data=dictp,orient="index", columns= ["Tweets"])
     new_df.index.name = "Date"
 
     #returning a new dataframe with the coloumn 'Tweets' and 'Date'
