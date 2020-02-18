@@ -2,9 +2,9 @@ def date_parser(dates):
 
     """
     A function that takes a list of datetime strings and returns only a string of dates in the 'yyyy-mm-dd' format.
-    
+
     The input is a list of datetime strings in the formate 'yyyy-mm-dd hh:mm:ss' and the output is only the date in the 'yyyy-mm-dd' format.
-   
+
     Args:
         dates(list): list of datetime strings
 
@@ -12,7 +12,7 @@ def date_parser(dates):
         list: lists of only the date strings
 
     Example:
-      >>>>date_parser(dates[:3])
+      >>> date_parser(dates[:3])
       ['2019-11-29', '2019-11-29', '2019-11-29']
     """
 

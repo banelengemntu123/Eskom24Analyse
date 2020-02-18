@@ -1,3 +1,5 @@
+import pandas as pd
+
 def word_splitter(df):
 
     """
@@ -11,7 +13,12 @@ def word_splitter(df):
     Returns:
         df (Dataframe) : a modified pandas dataframe from the original with an extra column "Tweets"
         added.
+
+    Example:
+        >>>>word_splitter(twitter_df).loc[0, 'Split Tweets']
+        ['@bongadlulane', 'please', 'send', 'an', 'email', 'to', 'mediadesk@eskom.co.za']
     """
+    
     #create an empty list
     tweet_split = []
 

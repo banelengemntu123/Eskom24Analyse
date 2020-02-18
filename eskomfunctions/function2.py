@@ -14,7 +14,7 @@ def five_num_summary(items):
         dictionary : keys for five number summary linked to appropriate values
 
     Examples:
-        >>>> five_num_summary([12,125,3,89,36])
+        >>> five_num_summary([12,125,3,89,36])
         {'min': 3, 'q1': 12.0, 'median': 36.0, 'q3': 89.0, 'max': 125}
     """
 
