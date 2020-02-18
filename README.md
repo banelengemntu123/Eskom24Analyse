@@ -45,6 +45,8 @@ function2.five_num_summary([25,36,48,39,23,21,45])
 function3.date_parser(dates[:3])
 #returns ['2019-11-29', '2019-11-29', '2019-11-29']
 
+function4.extract_municipality_hashtags(twitter_df.copy()).loc[8, "Municipality"]
+# returns ['Johannesburg']
 ```
 
 ## License
