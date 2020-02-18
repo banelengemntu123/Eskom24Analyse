@@ -51,6 +51,10 @@ function6.word_splitter(twitter_df.copy()).loc[0, 'Split Tweets']
 function4.extract_municipality_hashtags(twitter_df.copy()).loc[8, "Municipality"]
 # returns ['Johannesburg']
 ```
+## Authors and Acknowledgement
+
+Kgaogelo Mamadi
+  mrmamadi@outlook.com
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
