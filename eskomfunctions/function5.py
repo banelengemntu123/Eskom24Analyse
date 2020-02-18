@@ -4,7 +4,7 @@ def number_of_tweets_per_day(df):
      Create a function that counts the number of tweets sent in a day
      and converts data to a pandas dataframe.
 
-     Input is a DataFrame and the output is a dataframe with new column
+     Input is a DataFrame and the output is a new dataframe indicating the number of tweets sent per day
 
     Args:
         df (DataFrame) : a pandas dataframe with a column 'Date' for when
