@@ -16,6 +16,7 @@ def word_splitter(df):
         >>>>word_splitter(twitter_df).loc[0, 'Split Tweets']
         ['@bongadlulane', 'please', 'send', 'an', 'email', 'to', 'mediadesk@eskom.co.za']
     """
+    
     #create an empty list
     tweet_split = []
 

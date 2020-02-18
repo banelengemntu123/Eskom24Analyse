@@ -16,9 +16,8 @@ def number_of_tweets_per_day(df):
         grouped by day, with the number of tweets for that day.
 
     Examples:
-        >>> number_of_tweets_per_day(twitter_df.copy()).loc['2019-11-20', 'Tweets'] 
+        >>> number_of_tweets_per_day(twitter_df.copy()).loc['2019-11-20', 'Tweets']
         18
-
     """
 
     #Iterate through the dataframe and split
