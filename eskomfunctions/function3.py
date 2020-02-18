@@ -1,7 +1,7 @@
 def date_parser(dates):
 
     """
-    A function that takes a list of datetime strings and returns only the date in 'yyyy-mm-dd' formates
+    A function that takes a list of datetime strings and returns only the dates in 'yyyy-mm-dd' formates
 
     Args:
         dates(list): list of datetime strings
@@ -23,5 +23,3 @@ def date_parser(dates):
 
     #returning a new list with only a string of dates.
     return mylist
-
-#__________________________________________________________________________________________________________________________________________
