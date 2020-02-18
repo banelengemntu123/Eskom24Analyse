@@ -30,20 +30,25 @@ def extract_municipality_hashtags(df):
 
     #create a empty list
     mun_list = []
+
     #Iterate through a column and split
     for tweet in df['Tweets']:
         x = tweet.split()
-         #Create a boolean variable for the while loop to hold true
+
+    #Create a boolean variable for the while loop to hold true
         flag =False 
         while flag == 0:
-            #Iterate through each splited value in the dataframe column
+
+    #Iterate through each splited value in the dataframe column
             for key in x: 
                 if key[0] == '@':
                     if key in mun_dict.keys():
-                         #if the key which contains an '@ exists in a dictionary it will append to mun_list'
+
+    #if the key which contains an '@ exists in a dictionary it will append to mun_list'
                         mun_list.append([mun_dict[key]]) 
                         flag = True
-                        #should a key contain a : at the end, it should append as well
+
+    #should a key contain a : at the end, it should append as well
                     elif key[0:-1] in mun_dict.keys():
                         mun_list.append([mun_dict[key[0:-1]]])
                         flag=True
@@ -51,12 +56,15 @@ def extract_municipality_hashtags(df):
             if flag==False:
                 mun_list.append(np.nan)
                 flag=True
+
     #new list for hashtags
     hashtags=[]
     for tweet in df['Tweets']:
-        #loop through tags in the column after splitting and lowing each tweet
+
+    #loop through tags in the column after splitting and lowing each tweet
         hashtags.append([tags for tags in tweet.lower().split() if tags[0][0] == '#'])
-         #every '#' will append to the new list as a lower case list
+
+    #every '#' will append to the new list as a lower case list
         hashtags = [np.nan if x == [] else x for x in hashtags]
     df['municipality'] = mun_list
     df['hashtags'] = hashtags
