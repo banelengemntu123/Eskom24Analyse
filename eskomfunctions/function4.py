@@ -16,11 +16,7 @@ def extract_municipality_hashtags(df):
     """
     Return a dataframe with added columns of extracted hashtags and the municipality in each tweet
 
-<<<<<<< HEAD
-    The Input is a pandas DataFrame (df) and the output is a pandas DataFrame (df) with two new columns "municipality" and "hashtags"
-=======
     The Input is a pandas DataFrame (df) and the output is a pandas DataFrame (df) with two new columns, "municipality" and "hashtags"
->>>>>>> 6ddf9d2c4597bb5a56ffef048ad42ea1a39d8309
 
     Args:
         df(DataFrame): df pandas dataframe

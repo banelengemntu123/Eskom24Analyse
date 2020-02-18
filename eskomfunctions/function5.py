@@ -12,7 +12,6 @@ def number_of_tweets_per_day(df):
         df (DataFrame) : a pandas dataframe with a column 'Date' for when
         each tweet was sent.
 
-
     Returns:
         df (Dataframe) : a new pandas dataframe with an index columns,
         grouped by day, with the number of tweets for that day.

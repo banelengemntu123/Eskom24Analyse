@@ -40,7 +40,7 @@ def stop_words_remover(df):
     Create a function that creates a new column in the dataframe containing the
     strings of the 'Tweets' column seperated and with stop words removed.
 
-    The input is a pandas DataFrame and the output is a modified pandas DataFrame
+    The input is a pandas DataFrame and the output is a modified pandas DataFrame, with a new column 'Without Stop Words'
 
     Args:
         df (DataFrame) : a pandas dataframe containg a column 'Tweets'

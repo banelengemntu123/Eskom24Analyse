@@ -5,7 +5,9 @@ def word_splitter(df):
     """
     Splits the sentences in a dataframe's column into a list of the separate words.
     The created lists will be placed in a column named 'Split Tweets' in the original dataframe.
-    All wordsin lower case.
+    All words in lower case.
+
+    The input is a pandas DataFrame and the output is a modified DataFrame, with a new column, 'Spit Tweets'
 
     Args:
         df (DataFrame) : a pandas dataframe which should contain a column, named 'Tweets'.
@@ -18,7 +20,7 @@ def word_splitter(df):
         >>>>word_splitter(twitter_df).loc[0, 'Split Tweets']
         ['@bongadlulane', 'please', 'send', 'an', 'email', 'to', 'mediadesk@eskom.co.za']
     """
-    
+
     #create an empty list
     tweet_split = []
 
